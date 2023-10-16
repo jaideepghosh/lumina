@@ -25,8 +25,9 @@ export default function About() {
             <p className="text-slate-500">
               We recognize the importance of software as a service (SaaS) in
               transforming industries and driving innovation. Our mission is to
-              offer you a valuable resource, whether you're a designer,
-              developer, or entrepreneur. Here's how Lumina can benefit you:
+              offer you a valuable resource, whether you&apos;re a designer,
+              developer, or entrepreneur. Here&apos;s how Lumina can benefit
+              you:
             </p>
           </div>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-16">
