@@ -44,9 +44,9 @@ export default function About() {
                     {" "}
                     <g
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       {" "}
                       <rect
@@ -99,9 +99,9 @@ export default function About() {
                     {" "}
                     <g
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       {" "}
                       <polygon
@@ -148,9 +148,9 @@ export default function About() {
                     {" "}
                     <g
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       {" "}
                       <path
@@ -198,9 +198,9 @@ export default function About() {
                     {" "}
                     <g
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       {" "}
                       <path
