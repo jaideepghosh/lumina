@@ -1,17 +1,25 @@
 "use client";
 import { getAppAddress } from "@/utils/config";
 import Badge, { BadgeTypes } from "./Badge";
+import Link from "next/link";
 
 const GalleryItem = () => {
   const appAddress = getAppAddress();
   return (
     <div className="shadow-lg rounded">
-      <img
-        src={`${appAddress}/images/screens/appsmith/appsmith.png`}
-        className="rounded-t"
-      />
+      <Link href="/screens/appsmith">
+        <img
+          src={`${appAddress}/images/screens/appsmith/appsmith.png`}
+          className="rounded-t"
+        />
+      </Link>
       <div className="p-5">
-        <h4 className="text-lg font-medium text-blue-700 mb-2">appsmith</h4>
+        <Link
+          href="/screens/appsmith"
+          className="text-lg font-medium text-blue-700 mb-2"
+        >
+          appsmith
+        </Link>
         <p className="text-sm text-slate-500">
           Open-source, low-code platform to build internal apps quickly
         </p>
