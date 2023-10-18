@@ -17,7 +17,7 @@ const GalleryItem = () => {
         </p>
       </div>
       <div className="p-5 pt-0">
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
