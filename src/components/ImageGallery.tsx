@@ -56,14 +56,35 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
   }, [selectedImageIndex]);
 
   return (
-    <div className="grid grid-cols-2 gap-2">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
       {images.map((image, index) => (
         <div key={index} onClick={() => openFullscreen(index)}>
-          <img
-            src={image}
-            alt={`Image ${index}`}
-            className="h-auto max-w-full rounded-lg border"
-          />
+          <div className="relative group">
+            <img
+              src={image}
+              alt={`Image ${index}`}
+              className="h-auto max-w-full rounded-lg border"
+            />
+            <div className="hidden absolute inset-0 bg-gray-600 bg-opacity-50 group-hover:block">
+              <div className="flex justify-center items-center h-full">
+                <button
+                  onClick={() => openFullscreen(index)}
+                  className="text-white hover:text-gray-800 p-2 bg-gray-900 hover:bg-gray-300 rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
 
