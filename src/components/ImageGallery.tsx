@@ -65,7 +65,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
               alt={`Image ${index}`}
               className="h-auto max-w-full rounded-lg border"
             />
-            <div className="hidden absolute inset-0 bg-gray-600 bg-opacity-50 group-hover:block">
+            <div className="hidden absolute inset-0 bg-gray-600 rounded-lg bg-opacity-50 group-hover:block">
               <div className="flex justify-center items-center h-full">
                 <button
                   onClick={() => openFullscreen(index)}
