@@ -242,6 +242,22 @@ export default function About() {
           </h2>
         </div>
       </section>
+
+      <section className="p-4">
+        <div className="container mx-auto">
+          <div className="text-center">
+            <h2 className="md:text-3xl text-xl font-semibold my-5 text-slate-400">
+              Open source
+            </h2>
+            <p className="text-slate-500">
+              Open source solution for your inspiration. So all the Product and
+              company designations, such as trademarks or registered trademarks,
+              along with associated elements like logos, screenshots, and icons,
+              continue to be the exclusive property of their rightful owners.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

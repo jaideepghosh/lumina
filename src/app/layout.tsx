@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Lumina",
@@ -18,6 +19,7 @@ export default function RootLayout({
         <main className="bg-slate-50">
           <Navbar />
           <div className="pt-8">{children}</div>
+          <Footer />
         </main>
       </body>
     </html>
