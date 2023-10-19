@@ -1,11 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { getAppAddress } from "@/utils/config";
 
 interface ImageGalleryProps {
   images: string[];
 }
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
+  const appAddress = getAppAddress();
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null
   );
@@ -61,7 +63,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
         <div key={index} onClick={() => openFullscreen(index)}>
           <div className="relative group">
             <img
-              src={image}
+              src={`${appAddress + image}`}
               alt={`Image ${index}`}
               className="h-auto max-w-full rounded-lg border"
             />
@@ -91,7 +93,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
       {isFullscreen && (
         <div className="z-20 fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black">
           <img
-            src={images[selectedImageIndex as number]}
+            src={`${appAddress + images[selectedImageIndex as number]}`}
             alt={`Fullscreen Image ${selectedImageIndex as number}`}
             className="max-h-full max-w-full"
           />
