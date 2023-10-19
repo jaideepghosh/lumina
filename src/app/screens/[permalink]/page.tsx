@@ -22,3 +22,7 @@ export default function AppScreen(props: Props) {
     </div>
   );
 }
+
+export async function generateStaticParams() {
+  return [{ permalink: "google" }, { permalink: "appsmith" }];
+}

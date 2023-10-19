@@ -53,7 +53,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
     // else show both.
     setNextBtnVisibility(true);
     setPrevBtnVisibility(true);
-  }, [selectedImageIndex]);
+  }, [selectedImageIndex, images]);
 
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
