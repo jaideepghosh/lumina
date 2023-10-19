@@ -7,7 +7,7 @@ interface ImageGalleryProps {
 }
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
-  const appAddress = getAppAddress();
+  const [appAddress] = useState(getAppAddress());
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null
   );

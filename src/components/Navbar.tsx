@@ -5,10 +5,7 @@ const Navbar = () => {
     <div className="fixed w-full drop-shadow-md z-10">
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="https://jaideepghosh.github.io/lumina/"
-            className="flex items-center"
-          >
+          <Link href="/" className="flex items-center">
             {/* <img src="/vercel.svg" className="h-8 mr-3" alt="LUMINA Logo" /> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +24,7 @@ const Navbar = () => {
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               LUMINA
             </span>
-          </a>
+          </Link>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
