@@ -1,3 +1,3 @@
 export function getAppAddress() {
-  return process.env.APP_ADDRESS ?? "";
+  return process.env.NEXT_PUBLIC_APP_ADDRESS ?? "";
 }
