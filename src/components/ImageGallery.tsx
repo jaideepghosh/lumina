@@ -2,12 +2,13 @@
 import React, { useEffect, useState } from "react";
 import { getAppAddress } from "@/utils/config";
 
+const appAddress = getAppAddress();
+
 interface ImageGalleryProps {
   images: string[];
 }
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
-  const [appAddress] = useState(getAppAddress());
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null
   );

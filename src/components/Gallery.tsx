@@ -3,8 +3,9 @@ import { getAppAddress } from "@/utils/config";
 import Badge, { BadgeTypes } from "./Badge";
 import Link from "next/link";
 
+const appAddress = getAppAddress();
+
 const GalleryItem = () => {
-  const appAddress = getAppAddress();
   return (
     <div className="shadow-lg rounded">
       <Link href="/screens/appsmith">
