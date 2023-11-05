@@ -1,4 +1,5 @@
 import ImageGallery from "@/components/ImageGallery";
+import ScreenHeader from "@/components/ScreenHeader";
 
 type Props = {
   params: { permalink: string };
@@ -15,8 +16,8 @@ export default function AppScreen(props: Props) {
   ];
   return (
     <div>
-      <section className="pt-10 pb-4 text-center container mx-auto min-h-screen">
-        {params.permalink}
+      <section className="pt-10 pb-4 container mx-auto min-h-screen">
+        <ScreenHeader />
         <ImageGallery images={images} />
       </section>
     </div>
