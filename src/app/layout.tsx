@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="bg-slate-50">
+        <main className="bg-slate-50 dark:bg-gray-900 dark:text-white">
           <Navbar />
           <div className="pt-8">{children}</div>
           <Footer />

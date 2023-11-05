@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="fixed w-full drop-shadow-md z-10">
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center dark:text-white">
             {/* <img src="/vercel.svg" className="h-8 mr-3" alt="LUMINA Logo" /> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const Navbar = () => {
                 d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
               />
             </svg>
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap">
               LUMINA
             </span>
           </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/request-new-app"
-                  className="block px-4 py-2 mr-3 md:mr-0 text-white rounded bg-blue-700 hover:bg-blue-800 md:border-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block px-4 py-2 mr-3 md:mr-0 text-white rounded bg-blue-700 hover:bg-blue-800 md:border-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   Request a new app
                 </Link>
