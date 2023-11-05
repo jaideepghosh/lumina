@@ -2,7 +2,7 @@ import Badge, { BadgeTypes } from "./Badge";
 import Colors from "./Colors";
 
 const ScreenHeader = () => (
-  <section className="py-10">
+  <section className="py-10 dark:text-white p-4">
     <div className="grid md:grid-cols-6 gap-2">
       <div className="flex flex-col items-center p-2 gap-2">
         <img
@@ -26,7 +26,7 @@ const ScreenHeader = () => (
           <Badge message="risk" type={BadgeTypes.DANGER} />
           <Badge message="love" type={BadgeTypes.LOVE} />
         </div>
-        <p className="">
+        <p className="text-justify">
           Open-source, low-code platform to build internal apps quickly
           Open-source, low-code platform to build internal apps quickly
           Open-source, low-code platform to build internal apps quickly

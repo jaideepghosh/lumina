@@ -7,7 +7,7 @@ const appAddress = getAppAddress();
 
 const GalleryItem = () => {
   return (
-    <div className="shadow-lg rounded">
+    <div className="shadow-lg rounded dark:shadow-gray-700">
       <Link href="/screens/appsmith">
         <img
           src={`${appAddress}/images/screens/appsmith/appsmith.png`}

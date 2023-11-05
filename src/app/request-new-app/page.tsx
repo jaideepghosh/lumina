@@ -17,7 +17,7 @@ export default function RequestNewApp() {
         </div>
       </section>
 
-      <section className="bg-slate-100 p-1">
+      <section className="bg-slate-100 p-1 dark:bg-gray-900">
         <div className="container mx-auto">
           <form className="p-4">
             <div className="mb-6">

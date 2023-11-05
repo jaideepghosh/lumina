@@ -16,7 +16,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-slate-100 p-4">
+      <section className="bg-slate-100 p-4 dark:bg-gray-900">
         <div className="container mx-auto">
           <div className="text-center">
             <h2 className="md:text-3xl text-xl font-semibold my-5 text-slate-400">
@@ -31,7 +31,7 @@ export default function About() {
             </p>
           </div>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-16">
-            <div className="bg-white p-6 rounded">
+            <div className="bg-white p-6 rounded dark:bg-gray-900">
               <div className="flex gap-5">
                 <div className="w-12 h-12 bg-primary/10 rounded-md flex items-center justify-center gap-5">
                   <svg
@@ -86,7 +86,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="bg-white p-6 rounded">
+            <div className="bg-white p-6 rounded dark:bg-gray-900">
               <div className="flex gap-5">
                 <div className="w-12 h-12 bg-primary/10 rounded-md flex items-center justify-center gap-5">
                   <svg
@@ -135,7 +135,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="bg-white p-6 rounded">
+            <div className="bg-white p-6 rounded dark:bg-gray-900">
               <div className="flex gap-5">
                 <div className="w-12 h-12 bg-primary/10 rounded-md flex items-center justify-center gap-5">
                   <svg
@@ -185,7 +185,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="bg-white p-6 rounded">
+            <div className="bg-white p-6 rounded dark:bg-gray-900">
               <div className="flex gap-5">
                 <div className="w-12 h-12 bg-primary/10 rounded-md flex items-center justify-center gap-5">
                   <svg
